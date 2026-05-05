@@ -179,7 +179,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   .header-inner{padding:.75rem 1.1rem; gap:.9rem}
   .header-cta{display:none}
   .brand-sub{display:none}
-  .nav-toggle{display:flex}
+  .nav-toggle{display:flex;margin-left:auto}
 }
 
 /* ----- Hero ----- */
