@@ -96,15 +96,14 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .brand-mark{
   font-family:'Fraunces',serif;
   font-weight:700;
-  font-size:1.35rem;
+  font-size:1.05rem;
   width:38px;height:38px;
   display:grid; place-items:center;
   border:1.5px solid var(--gold-soft);
   border-radius:50%;
   color:var(--gold-soft);
-  letter-spacing:0;
+  letter-spacing:.04em;
 }
-.brand-amp{font-style:italic;font-size:.85em;color:var(--coral-soft);margin:0 1px}
 .brand-text{display:flex;flex-direction:column;line-height:1.05}
 .brand-name{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:700;color:var(--cream)}
 .brand-sub{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,250,240,.62)}
@@ -461,6 +460,13 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   max-width:48ch;
 }
 .dish p em{font-style:italic; color:var(--gold-soft)}
+.dish-note{
+  margin-top:.4rem;
+  font-size:.88rem;
+  color:var(--gold-soft);
+  letter-spacing:.02em;
+}
+.dish-note em{font-style:italic}
 .menu-foot{
   max-width:var(--max); margin:2.5rem auto 0;
   text-align:center;
@@ -789,7 +795,8 @@ a.c-card:hover{
   font-weight:500;
   font-size:1.08rem;
   color:var(--cream);
-  word-break:break-word;
+  overflow-wrap:anywhere;
+  line-height:1.35;
 }
 .contact-foot{
   font-family:'Fraunces',serif; font-style:italic;
@@ -819,7 +826,7 @@ a.c-card:hover{
   align-items:center;
 }
 .footer-brand{display:flex; align-items:center; gap:.8rem}
-.footer-brand .brand-mark{width:42px; height:42px; font-size:1.3rem}
+.footer-brand .brand-mark{width:42px; height:42px; font-size:1.15rem}
 .footer-name{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;color:var(--cream)}
 .footer-loc{font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,250,240,.5)}
 .footer-nav{
