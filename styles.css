@@ -163,8 +163,8 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .hero-overlay{
   position:absolute; inset:0;
   background:
-    radial-gradient(ellipse at 80% 10%, rgba(207,154,69,.22), transparent 55%),
-    linear-gradient(180deg, rgba(7,35,46,.55) 0%, rgba(7,35,46,.35) 35%, rgba(7,35,46,.78) 100%);
+    radial-gradient(ellipse at 80% 10%, rgba(207,154,69,.18), transparent 55%),
+    linear-gradient(180deg, rgba(7,35,46,.72) 0%, rgba(7,35,46,.58) 35%, rgba(7,35,46,.9) 100%);
 }
 .hero-content{
   position:relative;
