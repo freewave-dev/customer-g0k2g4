@@ -53,8 +53,19 @@
       <a href="#contact">Contact</a>
     </nav>
     <a href="tel:+13607769141" class="header-cta">(360) 776-9141</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <a href="#top">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#hours">Hours</a>
+  <a href="#visit">Visit</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:+13607769141" class="mobile-nav-phone">(360) 776-9141</a>
+</div>
 
 <main id="top">
 
@@ -629,5 +640,25 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var mobileNav = document.getElementById('mobile-nav');
+  function close(){
+    document.documentElement.classList.remove('nav-open');
+    toggle.setAttribute('aria-expanded','false');
+    mobileNav.setAttribute('aria-hidden','true');
+  }
+  toggle.addEventListener('click', function(){
+    var open = document.documentElement.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    mobileNav.setAttribute('aria-hidden', open ? 'false' : 'true');
+  });
+  mobileNav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', close); });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.site-header') && !e.target.closest('.mobile-nav')) close();
+  });
+})();
+</script>
 </body>
 </html>

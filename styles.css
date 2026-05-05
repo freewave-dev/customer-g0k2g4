@@ -135,11 +135,51 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .header-cta:hover{background:var(--gold);border-color:var(--gold);color:var(--ocean-deep)}
 
+.nav-toggle{
+  display:none;
+  flex-direction:column;justify-content:center;gap:5px;
+  width:40px;height:40px;padding:8px;
+  background:none;border:none;cursor:pointer;
+}
+.nav-toggle span{
+  display:block;height:1.5px;background:var(--cream);
+  border-radius:2px;
+  transition:transform .25s ease, opacity .2s ease;
+}
+.nav-open .nav-toggle span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.nav-open .nav-toggle span:nth-child(2){opacity:0}
+.nav-open .nav-toggle span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+.mobile-nav{
+  display:none;
+  position:fixed;top:64px;left:0;right:0;z-index:99;
+  background:var(--ocean-deep);
+  border-top:1px solid rgba(231,194,129,.15);
+  padding:1.2rem 1.5rem;
+  flex-direction:column;gap:0;
+}
+.mobile-nav a{
+  display:block;padding:.85rem .5rem;
+  font-family:'Fraunces',serif;font-size:1.1rem;
+  color:rgba(255,250,240,.88);
+  border-bottom:1px solid rgba(255,250,240,.08);
+  transition:color var(--t-fast);
+}
+.mobile-nav a:last-child{border-bottom:none}
+.mobile-nav a:hover{color:var(--gold-soft)}
+.mobile-nav-phone{
+  margin-top:.5rem;
+  color:var(--gold-soft) !important;
+  font-size:1rem !important;
+}
+.nav-open .mobile-nav{display:flex}
+
 @media (max-width: 880px){
   .primary-nav{display:none}
   .header-inner{padding:.75rem 1.1rem; gap:.9rem}
   .header-cta{display:none}
   .brand-sub{display:none}
+  .nav-toggle{display:flex}
 }
 
 /* ----- Hero ----- */
