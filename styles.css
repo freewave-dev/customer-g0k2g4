@@ -362,7 +362,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   border:6px solid var(--sand);
 }
 .art-img--marina{
-  background-image:url("https://images.unsplash.com/photo-1514218953589-2d7d37efd2dc?auto=format&fit=crop&w=1400&q=80");
+  background-image:url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1400&q=80");
 }
 .art-img--cocktail{
   background-image:url("https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=80");
@@ -583,7 +583,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   letter-spacing:.05em; margin-top:.2rem;
 }
 
-.g-img--shrimp{background-image:url("https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80")}
+.g-img--shrimp{background-image:url("images/mexican-shrimp-cocktail.jpg")}
 .g-img--ribeye{background-image:url("https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=900&q=80")}
 .g-img--rockefeller{background-image:url("https://images.unsplash.com/photo-1606731224874-9ad3f8e7a3a6?auto=format&fit=crop&w=900&q=80")}
 .g-img--ceviche{background-image:url("https://images.unsplash.com/photo-1542528180-a1208c5169a5?auto=format&fit=crop&w=900&q=80")}
