@@ -416,6 +416,29 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   column-gap:clamp(2rem,5vw,4.5rem);
   position:relative;
 }
+.menu-section-title{
+  max-width:var(--max); margin:3rem auto 1.2rem;
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-weight:500;
+  font-size:clamp(1.4rem, 2.4vw, 1.85rem);
+  color:var(--gold-soft);
+  letter-spacing:.01em;
+  position:relative;
+  display:flex; align-items:center; gap:1rem;
+}
+.menu-section-title::before,
+.menu-section-title::after{
+  content:""; flex:1; height:1px;
+  background:linear-gradient(to right, transparent, rgba(231,194,129,.32), transparent);
+}
+.menu-section-title span{
+  flex:0 0 auto;
+  padding:0 .4rem;
+  white-space:nowrap;
+}
+.menu-list + .menu-section-title{margin-top:3.5rem}
+.menu-header + .menu-section-title{margin-top:0}
 .dish{
   padding:1.4rem 0;
   border-bottom:1px solid rgba(255,250,240,.12);
@@ -468,19 +491,38 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .dish-note em{font-style:italic}
 .menu-foot{
-  max-width:var(--max); margin:2.5rem auto 0;
+  max-width:var(--max); margin:3rem auto 0;
   text-align:center;
-  font-size:.85rem;
-  color:rgba(255,250,240,.55);
-  letter-spacing:.04em;
+  color:rgba(255,250,240,.62);
   padding-top:2rem;
   border-top:1px solid rgba(255,250,240,.1);
 }
 .menu-foot .raw{color:var(--gold-soft); font-style:italic}
+.menu-info{
+  list-style:none;
+  display:flex; flex-direction:column; gap:.5rem;
+  font-size:.92rem;
+  letter-spacing:.01em;
+  margin-bottom:1.6rem;
+}
+.menu-info li{color:rgba(255,250,240,.78)}
+.menu-legend{
+  font-size:.82rem;
+  color:rgba(255,250,240,.55);
+  letter-spacing:.04em;
+  padding-top:1.2rem;
+  border-top:1px solid rgba(255,250,240,.08);
+  max-width:60ch;
+  margin:0 auto;
+}
 
 @media (max-width:780px){
   .menu-list{grid-template-columns:1fr}
   .dish:hover{padding-left:0}
+  .menu-section-title{font-size:1.3rem}
+  .menu-section-title::before,
+  .menu-section-title::after{display:none}
+  .menu-section-title{justify-content:center; text-align:center}
 }
 
 /* ----- Gallery ----- */
