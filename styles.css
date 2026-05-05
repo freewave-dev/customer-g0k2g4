@@ -357,8 +357,8 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   top:0; right:0;
 }
 .art-card--accent{
-  width:46%; height:42%;
-  left:0; bottom:6%;
+  width:46%; height:38%;
+  left:0; bottom:0;
   border:6px solid var(--sand);
 }
 .art-img--marina{
@@ -379,7 +379,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   .story-grid{grid-template-columns:1fr}
   .story-art{min-height:420px; order:2}
   .art-card--main{width:80%; height:58%}
-  .art-card--accent{width:50%; height:42%}
+  .art-card--accent{width:50%; height:38%}
   .art-stamp{width:100px; height:100px; right:-4px; top:-30px}
 }
 
