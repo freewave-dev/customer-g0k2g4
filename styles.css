@@ -369,13 +369,11 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .art-stamp{
   position:absolute;
-  width:130px; height:130px;
-  right:-12px; top:-22px;
+  width:140px; height:140px;
+  right:-18px; top:-28px;
   color:var(--coral);
-  animation: spin 38s linear infinite;
-  opacity:.92;
+  filter: drop-shadow(0 8px 18px rgba(7,35,46,.35));
 }
-@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
 
 @media (max-width:880px){
   .story-grid{grid-template-columns:1fr}
@@ -585,7 +583,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 .g-img--shrimp{background-image:url("images/mexican-shrimp-cocktail.jpg")}
 .g-img--ribeye{background-image:url("https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=900&q=80")}
-.g-img--rockefeller{background-image:url("https://images.unsplash.com/photo-1606731224874-9ad3f8e7a3a6?auto=format&fit=crop&w=900&q=80")}
+.g-img--rockefeller{background-image:url("images/oysters-rockefeller.jpg")}
 .g-img--ceviche{background-image:url("https://images.unsplash.com/photo-1542528180-a1208c5169a5?auto=format&fit=crop&w=900&q=80")}
 .g-img--judd{background-image:url("https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=900&q=80")}
 .g-img--sliders{background-image:url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80")}
@@ -621,7 +619,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .hours-photo{
   position:absolute; inset:0;
-  background-image:url("https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&q=80");
+  background-image:url("https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80");
   background-size:cover; background-position:center;
   transition:transform var(--t-slow);
 }
