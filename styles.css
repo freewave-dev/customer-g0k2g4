@@ -63,10 +63,10 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   font-size:.78rem;
   letter-spacing:.22em;
   text-transform:uppercase;
-  color:var(--coral);
+  color:#DC2626;
   margin-bottom:1rem;
 }
-.eyebrow--light{color:var(--gold-soft)}
+.eyebrow--light{color:#DC2626}
 .eyebrow--small{font-size:.66rem;letter-spacing:.18em;color:var(--muted);margin-bottom:.25rem}
 .lede{
   font-size:clamp(1.05rem,1.4vw,1.25rem);
@@ -451,7 +451,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .menu-header .display{color:var(--cream)}
 .menu-header .lede{margin:1.1rem auto 0; color:rgba(255,250,240,.72)}
-.menu-header .eyebrow{color:var(--gold-soft)}
+.menu-header .eyebrow{color:#DC2626}
 
 .menu-list{
   max-width:var(--max); margin:0 auto;
@@ -522,7 +522,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   white-space:nowrap;
 }
 .dish p{
-  color:rgba(255,250,240,.72);
+  color:var(--ink);
   font-size:.95rem;
   max-width:48ch;
 }
@@ -856,7 +856,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .contact .display--light{color:var(--ocean-deep)}
 .contact .lede--light{color:var(--ink)}
-.contact .eyebrow--light{color:var(--ocean-deep)}
+.contact .eyebrow--light{color:#DC2626}
 .contact .lede{margin:1.1rem auto 2.6rem}
 .contact-cards{
   display:grid; gap:1rem;
