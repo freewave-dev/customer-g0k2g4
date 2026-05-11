@@ -60,7 +60,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   display:inline-block;
   font-family:'Inter',sans-serif;
   font-weight:600;
-  font-size:.78rem;
+  font-size:.92rem;
   letter-spacing:.22em;
   text-transform:uppercase;
   color:#DC2626;
@@ -325,7 +325,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 /* ----- Ribbon ----- */
 .ribbon{
   background:#B5D9E8;
-  color:var(--ocean-deep);
+  color:#DC2626;
   font-family:'Cormorant Garamond',serif;
   font-style:italic;
   font-size:1.2rem;
@@ -676,11 +676,11 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .hours-badge{
   position:absolute; bottom:1.4rem; left:1.4rem;
-  background:var(--coral);
+  background:#DC2626;
   color:var(--cream);
   padding:.85rem 1.1rem;
   border-radius:8px;
-  font-family:'Cormorant Garamond',serif; font-style:italic;
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   font-size:1.05rem; line-height:1.15;
   box-shadow:var(--shadow-md);
   z-index:2;
@@ -713,13 +713,13 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .hours-note{
   margin-top:1.6rem;
   font-size:.95rem;
-  color:var(--ocean);
+  color:var(--cream);
   padding:1rem 1.2rem;
-  background:rgba(14,165,233,.08);
-  border-left:3px solid var(--coral);
+  background:var(--ocean-deep);
+  border-left:3px solid var(--ocean-deep);
   border-radius:4px;
 }
-.hours-note strong{color:var(--coral); font-weight:700}
+.hours-note strong{color:var(--cream); font-weight:700}
 
 @media (max-width:880px){
   .hours-grid{grid-template-columns:1fr}
