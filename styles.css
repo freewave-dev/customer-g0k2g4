@@ -247,7 +247,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .hero-title .line-2{display:block; color:var(--gold-soft)}
 .hero-title em{
   font-style:italic; font-weight:500;
-  color:var(--coral-soft);
+  color:inherit;
   font-family:'Cormorant Garamond',serif;
 }
 .hero-lede{
@@ -420,7 +420,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   position:absolute;
   width:140px; height:140px;
   right:-18px; top:-28px;
-  color:var(--coral);
+  color:#2C1810;
   filter: drop-shadow(0 8px 18px rgba(138,86,20,.35));
 }
 
@@ -448,7 +448,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   text-align:center;
   position:relative;
 }
-.menu-header .display{color:var(--ocean-deep)}
+.menu-header .display{color:#059669}
 .menu-header .lede{margin:1.1rem auto 0; color:var(--ink)}
 .menu-header .eyebrow{color:#DC2626}
 
@@ -493,7 +493,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   margin-bottom:.4rem;
 }
 .dish-head h3{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   font-weight:600;
   font-size:1.18rem;
   color:var(--ocean-deep);
@@ -514,7 +514,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   margin-bottom:.45rem;
 }
 .dish .price{
-  font-family:'Cormorant Garamond',serif;
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   font-weight:600;
   font-size:1.18rem;
   color:var(--ocean-deep);
@@ -675,8 +675,8 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .hours-badge{
   position:absolute; bottom:1.4rem; left:1.4rem;
-  background:#DC2626;
-  color:var(--cream);
+  background:var(--sand);
+  color:var(--ocean-deep);
   padding:.85rem 1.1rem;
   border-radius:8px;
   font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
