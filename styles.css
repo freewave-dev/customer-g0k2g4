@@ -696,18 +696,18 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   font-size:1rem;
 }
 .hours-list li span{
-  font-family:'Cormorant Garamond',serif;
-  font-weight:500;
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:600;
   font-size:1.15rem;
   color:var(--ocean);
 }
 .hours-list li b{
-  font-family:'Inter',sans-serif;
+  font-family:'Fraunces',Georgia,serif;
   font-weight:600;
-  letter-spacing:.04em;
+  letter-spacing:.02em;
   color:var(--ink);
 }
-.hours-list li.closed b{color:var(--coral); font-style:italic; font-family:'Cormorant Garamond',serif}
+.hours-list li.closed b{color:var(--coral); font-style:italic; font-family:'Fraunces',Georgia,serif}
 .hours-list li.closed span{color:var(--muted)}
 .hours-note{
   margin-top:1.6rem;
