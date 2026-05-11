@@ -165,11 +165,21 @@
         </figure>
         <div class="art-stamp">
           <svg viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <path id="stamp-top" d="M 22,100 A 78,78 0 0,1 178,100"/>
+              <path id="stamp-bottom" d="M 178,100 A 78,78 0 0,0 22,100"/>
+            </defs>
             <circle cx="100" cy="100" r="99" fill="#FFF8ED"/>
-            <circle cx="100" cy="100" r="98" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/>
-            <circle cx="100" cy="100" r="64" fill="none" stroke="currentColor" stroke-width="1.2"/>
-            <text x="100" y="96" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="20" font-style="italic" fill="currentColor">Salish</text>
-            <text x="100" y="118" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="20" font-style="italic" fill="currentColor">Sea</text>
+            <circle cx="100" cy="100" r="98" fill="none" stroke="#2C1810" stroke-width="1" stroke-opacity=".55"/>
+            <circle cx="100" cy="100" r="68" fill="none" stroke="#2C1810" stroke-width="1.2"/>
+            <text font-family="Cormorant Garamond, serif" font-size="15" letter-spacing="5" fill="#2C1810">
+              <textPath href="#stamp-top" startOffset="50%" text-anchor="middle">HARBOR BAR</textPath>
+            </text>
+            <text font-family="Cormorant Garamond, serif" font-size="15" letter-spacing="5" fill="#2C1810">
+              <textPath href="#stamp-bottom" startOffset="50%" text-anchor="middle">ORCAS ISLAND</textPath>
+            </text>
+            <text x="100" y="93" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="26" font-style="italic" fill="#2C1810">Salish</text>
+            <text x="100" y="120" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="26" font-style="italic" fill="#2C1810">Sea</text>
           </svg>
         </div>
       </div>
@@ -186,6 +196,9 @@
       </p>
     </div>
 
+    <div class="menu-grid">
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>Starters</span></h3>
 
     <div class="menu-list">
@@ -238,6 +251,9 @@
 
     </div>
 
+    </section>
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>Oysters</span></h3>
 
     <div class="menu-list">
@@ -272,6 +288,9 @@
 
     </div>
 
+    </section>
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>Salads</span></h3>
 
     <div class="menu-list">
@@ -297,6 +316,9 @@
 
     </div>
 
+    </section>
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>Soups &amp; Mac</span></h3>
 
     <div class="menu-list">
@@ -321,6 +343,9 @@
 
     </div>
 
+    </section>
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>Seafood</span></h3>
 
     <div class="menu-list">
@@ -363,6 +388,9 @@
 
     </div>
 
+    </section>
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>Mains</span></h3>
 
     <div class="menu-list">
@@ -415,6 +443,9 @@
 
     </div>
 
+    </section>
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>Burgers</span></h3>
 
     <div class="menu-list">
@@ -439,6 +470,9 @@
 
     </div>
 
+    </section>
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>Sides</span></h3>
 
     <div class="menu-list">
@@ -478,6 +512,9 @@
 
     </div>
 
+    </section>
+
+    <section class="menu-card">
     <h3 class="menu-section-title"><span>For the Kiddos</span></h3>
 
     <div class="menu-list">
@@ -517,6 +554,9 @@
         </div>
         <p>Fried chicken tenders &amp; fries.</p>
       </article>
+
+    </div>
+    </section>
 
     </div>
 
@@ -629,8 +669,13 @@
 
       <article class="travel">
         <div class="travel-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M5 17h14M6 17v-4l2-5h8l2 5v4M6 17a2 2 0 1 0 4 0M14 17a2 2 0 1 0 4 0"/>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 30h30M11 30v-7l3-7h20l3 7v7"/>
+            <path d="M14 16l1-4h18l1 4" stroke-width="1.4" opacity=".75"/>
+            <circle cx="16" cy="32" r="3.5" fill="currentColor" stroke="none"/>
+            <circle cx="32" cy="32" r="3.5" fill="currentColor" stroke="none"/>
+            <path d="M19 23h10" stroke-width="1.2" opacity=".55"/>
+            <path d="M37 21l3-1M11 21l-3-1" stroke-width="1.4" opacity=".6"/>
           </svg>
         </div>
         <h3>By Car</h3>
@@ -644,8 +689,12 @@
 
       <article class="travel">
         <div class="travel-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M3 17l1.5-4 7.5-2 7.5 2L21 17M3 17h18M5 17l-1 3h16l-1-3M12 11V4M12 4l5 4M12 4l-5 4"/>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 8v18M24 8l10 8M24 8L14 16" stroke-width="1.6"/>
+            <path d="M8 28l4-4h24l4 4-3 8H11z" fill="currentColor" stroke="none" opacity=".18"/>
+            <path d="M8 28l4-4h24l4 4-3 8H11z"/>
+            <path d="M6 38c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0 4-1.5 6 0 4 1.5 6 0 4-1.5 6 0" stroke-width="1.4"/>
+            <circle cx="24" cy="14" r="1" fill="currentColor" stroke="none"/>
           </svg>
         </div>
         <h3>By Boat</h3>
@@ -658,8 +707,12 @@
 
       <article class="travel">
         <div class="travel-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M3 20l4-7 4 4 5-9 5 12"/><circle cx="17" cy="5" r="2"/>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 38l8-14 6 6 10-18 12 22" stroke-width="2"/>
+            <path d="M6 38l8-14 6 6 10-18 12 22" fill="currentColor" stroke="none" opacity=".15"/>
+            <circle cx="34" cy="10" r="3.2" fill="currentColor" stroke="none"/>
+            <circle cx="34" cy="10" r="5" stroke-width="1" opacity=".4"/>
+            <path d="M5 38h38" stroke-width="1" opacity=".4"/>
           </svg>
         </div>
         <h3>By Foot</h3>
@@ -668,8 +721,10 @@
 
       <article class="travel">
         <div class="travel-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M2 16l9-3 4-9 2 1-3 8 6 1 1 2-9 3-3 5-2-1 2-5z"/>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 26l16-4 8-16 4 2-6 14 12 2 2 4-18 4-6 10-4-2 4-10z" fill="currentColor" stroke="none" opacity=".18"/>
+            <path d="M4 26l16-4 8-16 4 2-6 14 12 2 2 4-18 4-6 10-4-2 4-10z"/>
+            <path d="M6 42c2 1 4 1 6 0s4-1 6 0 4 1 6 0 4-1 6 0 4 1 6 0" stroke-width="1.4" opacity=".7"/>
           </svg>
         </div>
         <h3>By Seaplane</h3>
@@ -685,8 +740,9 @@
       <h2 class="display display--light">Pull up a chair on the deck</h2>
       <p class="lede lede--light">
         Reservations, large parties, or any questions —
-        we'd love to hear from you. We answer in island time.
+        we'd love to hear from you.
       </p>
+      <p class="lede lede--light contact-island-time">We answer in island time.</p>
       <div class="contact-cards">
         <a class="c-card" href="tel:+13607769141">
           <span class="c-label">Phone</span>
@@ -702,7 +758,7 @@
         </a>
       </div>
       <div class="contact-foot">
-        <span>★</span> Looking forward to seeing you mid May 2026 <span>★</span>
+        <span>★</span> Looking forward to hosting you this season <span>★</span>
       </div>
     </div>
   </section>
