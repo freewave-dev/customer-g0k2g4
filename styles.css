@@ -3,9 +3,9 @@
    ============================================================ */
 
 :root{
-  --ocean: #5C3520;
-  --ocean-deep: #3D2410;
-  --ocean-soft: #7B4A2D;
+  --ocean: #B97520;
+  --ocean-deep: #8A5614;
+  --ocean-soft: #D49544;
   --sand: #FFF8ED;
   --sand-2: #F5EDE0;
   --sand-3: #EAD9C4;
@@ -18,11 +18,11 @@
   --aqua-deep: #EA580C;
   --ink: #2C1810;
   --muted: #8B7355;
-  --rule: rgba(61,36,16,.18);
-  --rule-soft: rgba(61,36,16,.10);
-  --shadow-sm: 0 2px 8px rgba(61,36,16,.08);
-  --shadow-md: 0 12px 30px -10px rgba(61,36,16,.22);
-  --shadow-lg: 0 30px 60px -20px rgba(61,36,16,.35);
+  --rule: rgba(138,86,20,.18);
+  --rule-soft: rgba(138,86,20,.10);
+  --shadow-sm: 0 2px 8px rgba(138,86,20,.08);
+  --shadow-md: 0 12px 30px -10px rgba(138,86,20,.22);
+  --shadow-lg: 0 30px 60px -20px rgba(138,86,20,.35);
   --max: 1240px;
   --pad: clamp(1.25rem, 4vw, 3.25rem);
   --t-fast: 220ms cubic-bezier(.2,.7,.2,1);
@@ -80,7 +80,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .site-header{
   position:fixed; top:0; left:0; right:0;
   z-index:50;
-  background:rgba(61,36,16,.82);
+  background:rgba(138,86,20,.82);
   backdrop-filter:saturate(160%) blur(12px);
   -webkit-backdrop-filter:saturate(160%) blur(12px);
   border-bottom:1px solid rgba(255,250,240,.08);
@@ -210,7 +210,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   position:absolute; inset:0;
   background:
     radial-gradient(ellipse at 80% 10%, rgba(249,115,22,.18), transparent 55%),
-    linear-gradient(180deg, rgba(61,36,16,.72) 0%, rgba(61,36,16,.58) 35%, rgba(61,36,16,.9) 100%);
+    linear-gradient(180deg, rgba(138,86,20,.72) 0%, rgba(138,86,20,.58) 35%, rgba(138,86,20,.9) 100%);
 }
 .hero-content{
   position:relative;
@@ -396,7 +396,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   padding:1rem 1.2rem;
   font-family:'Cormorant Garamond',serif; font-style:italic;
   color:var(--cream); font-size:.95rem;
-  background:linear-gradient(to top, rgba(61,36,16,.78), transparent);
+  background:linear-gradient(to top, rgba(138,86,20,.78), transparent);
 }
 .art-card--main{
   width:78%; height:62%;
@@ -418,7 +418,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   width:140px; height:140px;
   right:-18px; top:-28px;
   color:var(--coral);
-  filter: drop-shadow(0 8px 18px rgba(61,36,16,.35));
+  filter: drop-shadow(0 8px 18px rgba(138,86,20,.35));
 }
 
 @media (max-width:880px){
@@ -601,7 +601,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .g-card:hover .g-img{transform:scale(1.07)}
 .g-card::after{
   content:""; position:absolute; inset:0;
-  background:linear-gradient(to top, rgba(61,36,16,.85) 0%, rgba(61,36,16,.05) 50%, transparent 100%);
+  background:linear-gradient(to top, rgba(138,86,20,.85) 0%, rgba(138,86,20,.05) 50%, transparent 100%);
 }
 .g-card figcaption{
   position:absolute; left:0; right:0; bottom:0; z-index:2;
@@ -672,7 +672,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .hours-art:hover .hours-photo{transform:scale(1.04)}
 .hours-art::after{
   content:""; position:absolute; inset:0;
-  background:linear-gradient(160deg, transparent 50%, rgba(61,36,16,.45));
+  background:linear-gradient(160deg, transparent 50%, rgba(138,86,20,.45));
 }
 .hours-badge{
   position:absolute; bottom:1.4rem; left:1.4rem;
