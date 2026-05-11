@@ -324,15 +324,15 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 /* ----- Ribbon ----- */
 .ribbon{
-  background:var(--ocean);
-  color:var(--gold-soft);
+  background:#B5D9E8;
+  color:var(--ocean-deep);
   font-family:'Cormorant Garamond',serif;
   font-style:italic;
   font-size:1.2rem;
   padding:1.1rem 0;
   overflow:hidden;
-  border-top:1px solid rgba(231,194,129,.18);
-  border-bottom:1px solid rgba(231,194,129,.18);
+  border-top:1px solid rgba(138,86,20,.18);
+  border-bottom:1px solid rgba(138,86,20,.18);
 }
 .ribbon-track{
   display:flex; gap:3rem;
@@ -466,7 +466,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   font-style:italic;
   font-weight:500;
   font-size:clamp(1.4rem, 2.4vw, 1.85rem);
-  color:var(--gold-soft);
+  color:var(--ink);
   letter-spacing:.01em;
   position:relative;
   display:flex; align-items:center; gap:1rem;
@@ -695,20 +695,21 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   border-bottom:1px solid var(--rule);
   font-size:1rem;
 }
+.hours-copy .display + .lede{margin-top:1.5rem}
 .hours-list li span{
   font-family:'Fraunces',Georgia,serif;
   font-weight:600;
   font-size:1.15rem;
-  color:var(--ocean);
+  color:#DC2626;
 }
 .hours-list li b{
   font-family:'Fraunces',Georgia,serif;
   font-weight:600;
   letter-spacing:.02em;
-  color:var(--ink);
+  color:#DC2626;
 }
-.hours-list li.closed b{color:var(--coral); font-style:italic; font-family:'Fraunces',Georgia,serif}
-.hours-list li.closed span{color:var(--muted)}
+.hours-list li.closed b{color:#DC2626; font-style:italic; font-family:'Fraunces',Georgia,serif}
+.hours-list li.closed span{color:#DC2626}
 .hours-note{
   margin-top:1.6rem;
   font-size:.95rem;
@@ -778,14 +779,14 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .travel-icon{
   width:54px; height:54px;
   display:grid; place-items:center;
-  background:linear-gradient(135deg, var(--coral), var(--coral-soft));
+  background:linear-gradient(135deg, #B5D9E8, #D6E9F2);
   color:var(--cream);
   border-radius:14px;
   margin-bottom:1.2rem;
 }
-.travel:nth-child(2) .travel-icon{background:linear-gradient(135deg, var(--ocean), var(--ocean-soft))}
-.travel:nth-child(3) .travel-icon{background:linear-gradient(135deg, var(--aqua-deep), var(--aqua))}
-.travel:nth-child(4) .travel-icon{background:linear-gradient(135deg, var(--gold), var(--gold-soft))}
+.travel:nth-child(2) .travel-icon{background:linear-gradient(135deg, #9333EA, #A855F7)}
+.travel:nth-child(3) .travel-icon{background:linear-gradient(135deg, #EA580C, #F97316)}
+.travel:nth-child(4) .travel-icon{background:linear-gradient(135deg, #FACC15, #FDE047)}
 .travel-icon svg{width:26px; height:26px}
 .travel h3{
   font-family:'Cormorant Garamond',serif;
@@ -814,8 +815,8 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   border-bottom:1px solid var(--rule-soft);
 }
 .taxi-list li:last-child{border-bottom:0}
-.taxi-list span{color:var(--ocean); font-weight:500}
-.taxi-list b{color:var(--coral); font-weight:600; font-feature-settings:'tnum'}
+.taxi-list span{color:var(--muted); font-weight:500}
+.taxi-list b{color:var(--muted); font-weight:600; font-feature-settings:'tnum'}
 
 @media (max-width:780px){
   .visit-grid{grid-template-columns:1fr}
@@ -825,10 +826,10 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .contact{
   padding: clamp(4rem, 9vw, 7rem) var(--pad);
   background:
-    radial-gradient(ellipse at 20% 100%, rgba(56,189,248,.18), transparent 55%),
-    radial-gradient(ellipse at 90% 0%, rgba(245,158,11,.18), transparent 50%),
-    var(--ocean-deep);
-  color:var(--cream);
+    radial-gradient(ellipse at 20% 100%, rgba(255,255,255,.35), transparent 55%),
+    radial-gradient(ellipse at 90% 0%, rgba(255,255,255,.25), transparent 50%),
+    #B5D9E8;
+  color:var(--ink);
   text-align:center;
   position:relative;
   overflow:hidden;
@@ -837,7 +838,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   content:""; position:absolute;
   top:-220px; left:50%; transform:translateX(-50%);
   width:1200px; height:1200px;
-  border:1px solid rgba(231,194,129,.12);
+  border:1px solid rgba(138,86,20,.10);
   border-radius:50%;
   pointer-events:none;
 }
@@ -845,7 +846,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   content:""; position:absolute;
   top:-100px; left:50%; transform:translateX(-50%);
   width:900px; height:900px;
-  border:1px solid rgba(231,194,129,.08);
+  border:1px solid rgba(138,86,20,.07);
   border-radius:50%;
   pointer-events:none;
 }
@@ -853,6 +854,9 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   position:relative;
   max-width:920px; margin:0 auto;
 }
+.contact .display--light{color:var(--ocean-deep)}
+.contact .lede--light{color:var(--ink)}
+.contact .eyebrow--light{color:var(--ocean-deep)}
 .contact .lede{margin:1.1rem auto 2.6rem}
 .contact-cards{
   display:grid; gap:1rem;
@@ -862,37 +866,37 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .c-card{
   display:flex; flex-direction:column; gap:.4rem;
   padding:1.6rem 1.4rem;
-  background:rgba(255,250,240,.05);
-  border:1px solid rgba(255,250,240,.12);
+  background:rgba(255,253,248,.5);
+  border:1px solid rgba(138,86,20,.18);
   border-radius:12px;
   transition:background var(--t-fast), border-color var(--t-fast), transform var(--t-fast);
 }
 a.c-card:hover{
-  background:rgba(255,250,240,.08);
-  border-color:rgba(231,194,129,.4);
+  background:rgba(255,253,248,.8);
+  border-color:var(--ocean);
   transform:translateY(-3px);
 }
 .c-label{
   font-size:.7rem; letter-spacing:.2em; text-transform:uppercase;
-  color:var(--gold-soft);
+  color:var(--ocean);
 }
 .c-value{
   font-family:'Cormorant Garamond',serif;
   font-weight:500;
   font-size:1.08rem;
-  color:var(--cream);
+  color:var(--ocean-deep);
   overflow-wrap:anywhere;
   line-height:1.35;
 }
 .contact-foot{
   font-family:'Cormorant Garamond',serif; font-style:italic;
   font-size:1rem;
-  color:var(--gold-soft);
+  color:var(--ocean-deep);
   letter-spacing:.04em;
   padding-top:1.8rem;
-  border-top:1px solid rgba(255,250,240,.1);
+  border-top:1px solid rgba(138,86,20,.18);
 }
-.contact-foot span{margin:0 .4rem; color:var(--coral-soft)}
+.contact-foot span{margin:0 .4rem; color:var(--ocean)}
 
 @media (max-width:680px){
   .contact-cards{grid-template-columns:1fr}
