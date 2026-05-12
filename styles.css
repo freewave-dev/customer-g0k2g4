@@ -793,32 +793,33 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   background:var(--sand);
 }
 .visit-header{
-  max-width:760px; margin:0 auto 3rem;
+  max-width:760px; margin:0 auto 2.4rem;
   text-align:center;
 }
 .visit-header .lede{margin:1rem auto 0}
 .visit-address{
-  max-width:var(--max); margin:0 auto 2.2rem;
-  display:flex; align-items:center; gap:1.1rem;
+  max-width:var(--max); margin:0 auto 1.6rem;
+  display:flex; flex-direction:column; align-items:center; gap:.35rem;
   padding:1.4rem 1.6rem;
-  background:var(--cream);
-  border-radius:10px;
-  box-shadow:var(--shadow-sm);
+  background:rgba(255,253,248,.78);
+  border:1px solid rgba(138,86,20,.16);
+  border-radius:12px;
+  box-shadow:0 6px 18px -10px rgba(138,86,20,.18);
+  text-align:center;
+  transition:background var(--t-fast), box-shadow var(--t-fast);
 }
-.addr-icon{
-  width:46px; height:46px;
-  display:grid; place-items:center;
-  background:var(--ocean);
-  color:var(--gold-soft);
-  border-radius:50%;
-  flex:0 0 auto;
+.visit-address:hover{
+  background:rgba(255,253,248,.95);
+  box-shadow:0 10px 22px -12px rgba(138,86,20,.22);
 }
-.addr-icon svg{width:22px; height:22px}
+.visit-address .eyebrow{margin-bottom:0}
 .visit-address .addr{
   font-family:'Cormorant Garamond',serif;
-  font-size:1.2rem;
+  font-size:clamp(1.15rem, 2vw, 1.45rem);
   font-weight:500;
+  font-style:italic;
   color:var(--ocean);
+  letter-spacing:.01em;
 }
 .visit-grid{
   max-width:var(--max); margin:0 auto;
@@ -826,127 +827,60 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   grid-template-columns: repeat(2, 1fr);
 }
 .travel{
-  background:var(--cream);
-  border-radius:14px;
-  padding:2rem 2.1rem;
-  border:1px solid var(--rule-soft);
-  transition:transform var(--t-med), box-shadow var(--t-med), border-color var(--t-med);
+  background:rgba(255,253,248,.78);
+  border:1px solid rgba(138,86,20,.16);
+  border-radius:12px;
+  padding:1.6rem 1.8rem 1.4rem;
+  box-shadow:0 6px 18px -10px rgba(138,86,20,.18);
+  transition:transform var(--t-fast), box-shadow var(--t-fast), background var(--t-fast);
 }
 .travel:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-md);
-  border-color:transparent;
+  transform:translateY(-2px);
+  background:rgba(255,253,248,.95);
+  box-shadow:0 14px 28px -12px rgba(138,86,20,.28);
 }
-.travel-icon{
-  width:74px; height:74px;
-  display:grid; place-items:center;
-  background:linear-gradient(135deg, #5BA3C7, #87C4DC);
-  color:var(--cream);
-  border-radius:50%;
-  margin-bottom:1.3rem;
-  box-shadow:
-    0 10px 22px -8px rgba(91,163,199,.55),
-    inset 0 -3px 6px rgba(0,0,0,.08),
-    inset 0 2px 4px rgba(255,255,255,.35);
-  position:relative;
-  transition:transform var(--t-med), box-shadow var(--t-med);
-}
-.travel-icon::before{
-  content:"";
-  position:absolute;
-  inset:-6px;
-  border-radius:50%;
-  border:1.5px dashed currentColor;
-  color:rgba(138,86,20,.28);
-  opacity:0;
-  transform:scale(.85);
-  transition:opacity var(--t-med), transform var(--t-med);
-}
-.travel:hover .travel-icon{
-  transform:rotate(-6deg) scale(1.06);
-  box-shadow:
-    0 14px 28px -8px rgba(91,163,199,.6),
-    inset 0 -3px 6px rgba(0,0,0,.1),
-    inset 0 2px 4px rgba(255,255,255,.4);
-}
-.travel:hover .travel-icon::before{
-  opacity:1;
-  transform:scale(1);
-  animation: stampSpin 14s linear infinite;
-}
-.travel:nth-child(2) .travel-icon{
-  background:linear-gradient(135deg, #B97520, #E0A052);
-  box-shadow:
-    0 10px 22px -8px rgba(185,117,32,.55),
-    inset 0 -3px 6px rgba(0,0,0,.08),
-    inset 0 2px 4px rgba(255,255,255,.35);
-}
-.travel:nth-child(2):hover .travel-icon{
-  box-shadow:
-    0 14px 28px -8px rgba(185,117,32,.6),
-    inset 0 -3px 6px rgba(0,0,0,.1),
-    inset 0 2px 4px rgba(255,255,255,.4);
-}
-.travel:nth-child(3) .travel-icon{
-  background:linear-gradient(135deg, #DC2626, #F97316);
-  box-shadow:
-    0 10px 22px -8px rgba(220,38,38,.55),
-    inset 0 -3px 6px rgba(0,0,0,.08),
-    inset 0 2px 4px rgba(255,255,255,.35);
-}
-.travel:nth-child(3):hover .travel-icon{
-  box-shadow:
-    0 14px 28px -8px rgba(220,38,38,.6),
-    inset 0 -3px 6px rgba(0,0,0,.1),
-    inset 0 2px 4px rgba(255,255,255,.4);
-}
-.travel:nth-child(4) .travel-icon{
-  background:linear-gradient(135deg, #D97706, #FBBF24);
-  box-shadow:
-    0 10px 22px -8px rgba(217,119,6,.55),
-    inset 0 -3px 6px rgba(0,0,0,.08),
-    inset 0 2px 4px rgba(255,255,255,.35);
-}
-.travel:nth-child(4):hover .travel-icon{
-  box-shadow:
-    0 14px 28px -8px rgba(217,119,6,.6),
-    inset 0 -3px 6px rgba(0,0,0,.1),
-    inset 0 2px 4px rgba(255,255,255,.4);
-}
-.travel-icon svg{width:42px; height:42px}
-@keyframes stampSpin{
-  from{transform:rotate(0deg)}
-  to{transform:rotate(360deg)}
-}
-.travel h3{
+.travel-heading{
+  margin:0 0 1rem;
   font-family:'Cormorant Garamond',serif;
+  font-style:italic;
   font-weight:600;
-  font-size:1.55rem;
-  color:var(--ocean);
-  margin-bottom:.7rem;
-  letter-spacing:-0.01em;
+  font-size:1.5rem;
+  color:var(--ocean-deep);
+  letter-spacing:.01em;
+  padding-bottom:.55rem;
+  border-bottom:1.5px solid rgba(138,86,20,.22);
 }
-.travel p{color:var(--muted); margin-bottom:.6rem; font-size:.97rem}
+.travel-heading span{
+  display:inline-flex; align-items:center; gap:.55rem;
+}
+.travel-heading span::before{
+  content:"\2605";
+  font-size:.7em;
+  font-style:normal;
+  color:#DC2626;
+}
+.travel p{color:var(--ink); margin-bottom:.6rem; font-size:.95rem; line-height:1.55}
 .travel p:last-child{margin-bottom:0}
+.travel p em{font-style:italic; color:var(--ocean-deep)}
 .travel a{color:var(--coral); font-weight:600; border-bottom:1px solid currentColor}
 .travel .fine{
-  font-size:.85rem;
+  font-size:.82rem;
   color:var(--muted);
   font-style:italic;
-  border-top:1px dashed var(--rule);
+  border-top:1px dashed rgba(138,86,20,.18);
   padding-top:.8rem;
-  margin-top:1rem;
+  margin-top:.9rem;
 }
-.taxi-list{list-style:none; margin-top:.9rem; display:grid; gap:.5rem}
+.taxi-list{list-style:none; margin-top:.9rem; display:grid; gap:.4rem}
 .taxi-list li{
-  display:flex; justify-content:space-between;
-  font-size:.95rem;
-  padding:.45rem 0;
-  border-bottom:1px solid var(--rule-soft);
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-size:.92rem;
+  padding:.4rem 0;
+  border-bottom:1px dashed rgba(138,86,20,.14);
 }
 .taxi-list li:last-child{border-bottom:0}
-.taxi-list span{color:var(--muted); font-weight:500}
-.taxi-list b{color:var(--muted); font-weight:600; font-feature-settings:'tnum'}
+.taxi-list span{color:var(--ink); font-weight:500}
+.taxi-list b{color:var(--ocean-deep); font-weight:600; font-feature-settings:'tnum'}
 
 @media (max-width:780px){
   .visit-grid{grid-template-columns:1fr}
