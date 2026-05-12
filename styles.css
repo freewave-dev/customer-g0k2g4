@@ -434,7 +434,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 /* ----- Menu ----- */
 .menu{
-  padding: clamp(4rem, 9vw, 8rem) var(--pad);
+  padding: clamp(2rem, 5vw, 4rem) var(--pad);
   background:
     radial-gradient(ellipse at 20% 100%, rgba(255,255,255,.35), transparent 55%),
     radial-gradient(ellipse at 90% 0%, rgba(255,255,255,.25), transparent 50%),
@@ -444,11 +444,11 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   overflow:hidden;
 }
 .menu-header{
-  max-width:var(--max); margin:0 auto 3.5rem;
+  max-width:var(--max); margin:0 auto 2.2rem;
   text-align:center;
   position:relative;
 }
-.menu-header .display{color:var(--gold-soft)}
+.menu-header .display{color:var(--cream)}
 .menu-header .lede{margin:1.1rem auto 0; color:var(--ink)}
 .menu-header .eyebrow{color:#DC2626}
 
@@ -559,10 +559,10 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .dish-note em{font-style:italic}
 .menu-foot{
-  max-width:var(--max); margin:3rem auto 0;
+  max-width:var(--max); margin:2rem auto 0;
   text-align:center;
   color:var(--ink);
-  padding-top:2rem;
+  padding-top:1.4rem;
   border-top:1px solid rgba(138,86,20,.18);
 }
 .menu-foot .raw{color:var(--ocean-deep); font-style:italic}
@@ -776,8 +776,8 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .hours-note-tag{
   font-family:'Cormorant Garamond',serif;
   font-style:italic;
-  font-size:1rem;
-  color:rgba(255,253,248,.78);
+  font-size:1.25rem;
+  color:var(--cream);
   position:relative;
   z-index:1;
 }
