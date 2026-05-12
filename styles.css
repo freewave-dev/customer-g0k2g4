@@ -350,7 +350,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 /* ----- Story ----- */
 .story{
-  padding: clamp(4rem, 9vw, 8rem) var(--pad);
+  padding: clamp(2rem, 5vw, 4rem) var(--pad);
   background:
     radial-gradient(ellipse at 90% 0%, rgba(56,189,248,.10), transparent 50%),
     var(--sand);
@@ -595,7 +595,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 /* ----- Gallery ----- */
 .gallery{
-  padding: clamp(4rem, 9vw, 8rem) var(--pad);
+  padding: clamp(2rem, 5vw, 4rem) var(--pad);
   background:var(--sand);
 }
 .gallery-header{
@@ -670,7 +670,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 /* ----- Hours ----- */
 .hours{
-  padding: clamp(4rem, 9vw, 8rem) var(--pad);
+  padding: clamp(2rem, 5vw, 4rem) var(--pad);
   background:var(--sand-2);
   position:relative;
 }
@@ -789,7 +789,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 /* ----- Visit ----- */
 .visit{
-  padding: clamp(4rem, 9vw, 8rem) var(--pad);
+  padding: clamp(2rem, 5vw, 4rem) var(--pad);
   background:var(--sand);
 }
 .visit-header{
@@ -954,7 +954,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 /* ----- Contact ----- */
 .contact{
-  padding: clamp(4rem, 9vw, 7rem) var(--pad);
+  padding: clamp(2rem, 5vw, 4rem) var(--pad);
   background:
     radial-gradient(ellipse at 20% 100%, rgba(255,255,255,.35), transparent 55%),
     radial-gradient(ellipse at 90% 0%, rgba(255,255,255,.25), transparent 50%),
@@ -999,8 +999,9 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 }
 .contact-cards{
   display:grid; gap:1rem;
-  grid-template-columns:repeat(3,1fr);
-  margin-bottom:2.5rem;
+  grid-template-columns:repeat(2,1fr);
+  max-width:640px;
+  margin:0 auto 2.5rem;
 }
 .c-card{
   display:flex; flex-direction:column; gap:.4rem;
