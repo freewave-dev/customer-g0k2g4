@@ -1045,20 +1045,26 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .contact .lede--light{color:var(--ink)}
 .contact .eyebrow--light{color:#DC2626}
 .contact .lede{margin:1.1rem auto 0}
-.contact-island-time{
-  margin:.6rem auto 2.6rem !important;
-  font-family:'Cormorant Garamond',serif;
-  font-style:italic;
-  font-size:1.15rem;
-  white-space:nowrap;
-  color:var(--ocean-deep);
-  letter-spacing:.02em;
-}
 .contact-cards{
   display:grid; gap:1rem;
   grid-template-columns:repeat(2,1fr);
   max-width:640px;
-  margin:0 auto 2.5rem;
+  margin:1.6rem auto 2rem;
+}
+.contact-reservation{
+  max-width:640px;
+  margin:0 auto 2.2rem;
+  text-align:left;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.08rem;
+  line-height:1.55;
+  color:var(--ocean-deep);
+}
+.contact-reservation p{
+  margin:0 0 1rem;
+}
+.contact-reservation p:last-child{
+  margin-bottom:0;
 }
 .c-card{
   display:flex; flex-direction:column; gap:.4rem;
