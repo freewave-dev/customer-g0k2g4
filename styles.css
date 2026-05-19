@@ -713,7 +713,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .g-img--sliders{background-image:url("https://media.freewave.dev/g0k2g4/images/burger.webp")}
 .g-img--hurricane{background-image:url("https://media.freewave.dev/g0k2g4/images/3drinks.webp")}
 .g-img--howdy{background-image:url("https://media.freewave.dev/g0k2g4/images/drink2.webp")}
-.g-img--pirate{background-image:url("https://media.freewave.dev/g0k2g4/images/unsplash-f1346070dbd2.webp")}
+.g-img--pirate{background-image:url("https://media.freewave.dev/g0k2g4/images/drink3.webp")}
 
 @media (max-width:880px){
   .gallery-grid{grid-template-columns:repeat(2,1fr)}
