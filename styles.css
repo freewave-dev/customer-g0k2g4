@@ -419,6 +419,7 @@ a.meta-item:hover{opacity:.78}
 .art-img--cocktail{
   background-image:url("https://media.freewave.dev/g0k2g4/images/55271227924_a113484452_c.webp");
   background-position:center 75%;
+  filter:saturate(150%) contrast(108%);
 }
 .art-stamp{
   position:absolute;
