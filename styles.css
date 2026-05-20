@@ -202,7 +202,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .hero-image{
   position:absolute; inset:0;
   background-image:url("https://media.freewave.dev/g0k2g4/images/IMG_5669.webp");
-  background-size:contain; background-position:center;
+  background-size:cover; background-position:center;
   background-repeat:no-repeat;
   background-color:#2C1810;
   filter:saturate(105%) contrast(102%);
