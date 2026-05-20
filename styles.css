@@ -201,7 +201,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 .hero-media{position:absolute; inset:0; z-index:-1}
 .hero-image{
   position:absolute; inset:-4%;
-  background-image:url("https://images.unsplash.com/photo-1759351483172-05aa9955787d?w=2000&fit=crop&q=80");
+  background-image:url("images/IMG_5669.webp");
   background-size:cover; background-position:center;
   filter:saturate(105%) contrast(102%);
   animation: heroPan 22s ease-in-out infinite alternate;
