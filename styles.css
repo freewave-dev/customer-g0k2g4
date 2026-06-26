@@ -1263,6 +1263,33 @@ a.c-card:hover{
 
 /* ----- Event page (July 4th) ----- */
 .page-top{ padding-top: clamp(7rem, 13vw, 9rem); }
+.event-banner{
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  background:var(--sand);
+}
+.event-banner-frame{
+  max-width: var(--max);
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(138,86,20,.16);
+  box-shadow: var(--shadow-md);
+  background:#2C1810;
+}
+.event-banner-image{
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  background-image: url("https://media.freewave.dev/g0k2g4/images/Image_3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.visit--event{ padding-top: clamp(1.5rem, 3vw, 2.5rem); }
+@media (max-width:780px){
+  .event-banner-image{ aspect-ratio: 4 / 5; }
+}
 .mobile-nav:target{ display:flex; }
 .mobile-nav-close{
   align-self:flex-end;
