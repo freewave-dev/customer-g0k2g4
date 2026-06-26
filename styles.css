@@ -1304,6 +1304,7 @@ a.c-card:hover{
   line-height:1.2;
 }
 .travel--event .travel-heading span::before{ display:none; }
+.travel--event p + .travel-heading{ margin-top:1.4rem; }
 .event-list{
   list-style:none;
   margin:.4rem 0 0;
