@@ -456,6 +456,15 @@ a.meta-item:hover{opacity:.78}
 .menu-header .display{color:var(--cream)}
 .menu-header .lede{margin:1.1rem auto 0; color:var(--ink)}
 .menu-header .eyebrow{color:#DC2626}
+.menu-sample-note{
+  margin:.9rem auto 0;
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:.95rem;
+  letter-spacing:.04em;
+  color:var(--ocean-deep);
+  opacity:.85;
+}
 
 .menu-grid{
   max-width:var(--max);
