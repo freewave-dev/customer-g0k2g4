@@ -1354,15 +1354,6 @@ a.c-card:hover{
 @media (max-width:780px){
   .event-banner-image{ aspect-ratio: 4 / 5; }
 }
-.mobile-nav:target{ display:flex; }
-.mobile-nav-close{
-  align-self:flex-end;
-  font-size:.72rem !important;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  color:rgba(255,250,240,.55) !important;
-  border-bottom:none !important;
-}
 .travel--event .travel-heading{
   font-size:clamp(1.25rem, 2.4vw, 1.5rem);
   line-height:1.2;

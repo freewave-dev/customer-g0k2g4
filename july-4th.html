@@ -52,13 +52,12 @@
       </div>
     </nav>
     <a href="tel:+13607769141" class="header-cta">(360) 776-9141</a>
-    <a href="#mobile-nav" class="nav-toggle" aria-label="Open menu">
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
-    </a>
+    </button>
   </div>
 </header>
-<div class="mobile-nav" id="mobile-nav">
-  <a href="#top" class="mobile-nav-close">Close</a>
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
   <a href="index.html#top">Home</a>
   <a href="index.html#menu">Menu</a>
   <a href="index.html#hours">Hours</a>
@@ -194,5 +193,28 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var mobileNav = document.getElementById('mobile-nav');
+  function close(){
+    document.documentElement.classList.remove('nav-open');
+    toggle.setAttribute('aria-expanded','false');
+    mobileNav.setAttribute('aria-hidden','true');
+  }
+  toggle.addEventListener('click', function(){
+    var open = document.documentElement.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    mobileNav.setAttribute('aria-hidden', open ? 'false' : 'true');
+  });
+  mobileNav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', close); });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.site-header') && !e.target.closest('.mobile-nav')) close();
+  });
+  // Safari restores the DOM as-is from its back/forward cache when returning
+  // from another tab (open menus included) — reset to a clean slate.
+  window.addEventListener('pageshow', close);
+})();
+</script>
 </body>
 </html>

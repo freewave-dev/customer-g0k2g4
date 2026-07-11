@@ -935,6 +935,9 @@
   document.addEventListener('click', function(e){
     if(!e.target.closest('.site-header') && !e.target.closest('.mobile-nav')) close();
   });
+  // Safari restores the DOM as-is from its back/forward cache when returning
+  // from another tab (open menus included) — reset to a clean slate.
+  window.addEventListener('pageshow', close);
 })();
 </script>
 </body>
