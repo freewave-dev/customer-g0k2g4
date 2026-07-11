@@ -161,6 +161,9 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   transition:opacity var(--t-fast), transform var(--t-fast), visibility var(--t-fast);
   z-index:60;
 }
+.nav-dropdown-menu::before{
+  content:""; position:absolute; left:0; right:0; top:-.7rem; height:.7rem;
+}
 .nav-dropdown:hover .nav-dropdown-menu,
 .nav-dropdown:focus-within .nav-dropdown-menu{
   opacity:1; visibility:visible; transform:translate(-50%,0);
